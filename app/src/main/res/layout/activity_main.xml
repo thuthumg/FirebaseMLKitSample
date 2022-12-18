@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.card.MaterialCardView
+        app:strokeWidth="1dp"
+        app:strokeColor="@android:color/darker_gray"
+        app:cardCornerRadius="@dimen/margin_small"
+        android:layout_margin="@dimen/margin_medium"
+        android:layout_gravity="center"
+        android:layout_width="200dp"
+        android:layout_height="200dp">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivPhoto"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+
+        android:layout_margin="@dimen/margin_medium_2"
+        android:id="@+id/tvDetectedTexts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnTakePhoto"
+        android:layout_margin="@dimen/margin_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Take Photo" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnFindText"
+        android:layout_margin="@dimen/margin_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FindText" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnFindFace"
+        android:layout_margin="@dimen/margin_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FindFace" />
+
+</LinearLayout>
